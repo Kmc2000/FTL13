@@ -1658,6 +1658,7 @@
 #include "code\modules\projectiles\guns\medbeam.dm"
 #include "code\modules\projectiles\guns\mounted.dm"
 #include "code\modules\projectiles\guns\projectile.dm"
+#include "code\modules\projectiles\guns\supersoaker.dm"
 #include "code\modules\projectiles\guns\syringe_gun.dm"
 #include "code\modules\projectiles\guns\energy\laser.dm"
 #include "code\modules\projectiles\guns\energy\nuclear.dm"
