@@ -13,7 +13,6 @@
 // END_PREFERENCES
 
 // BEGIN_INCLUDE
-#include "Enterprise.dmm"
 #include "_maps\__MAP_DEFINES.dm"
 #include "_maps\aetherwhisp.dm"
 #include "code\_compile_options.dm"
