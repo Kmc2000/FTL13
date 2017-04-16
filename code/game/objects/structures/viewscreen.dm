@@ -12,6 +12,10 @@
 
 	var/view_mode = 0 //0 = tactical 1 = nav
 
+/obj/structure/viewscreen/trek
+	name = "LCARS display"
+	icon = 'icons/obj/96x96.dmi'
+	icon_state = "trekscreen"
 
 /obj/structure/viewscreen/New()
 	if(dir == 4 || dir == 8)

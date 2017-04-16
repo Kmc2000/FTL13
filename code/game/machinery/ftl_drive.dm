@@ -21,6 +21,13 @@
 	var/charge_rate = 30000
 	var/plasma_charge_rate = 10
 
+/obj/machinery/ftl_drive/warp
+	name = "Warp Core"
+	icon = 'icons/obj/96x96.dmi'
+	icon_state = "ftl_drive_trek"
+	desc = "A very tall looking FTL drive"
+
+
 /obj/machinery/ftl_drive/New()
 	..()
 	if(!atmos_terminal)
