@@ -51,8 +51,6 @@
 		var/mob/living/carbon/human/H = target
 		H.adjustStaminaLoss(8)
 
-
-
 /mob/living/simple_animal/hostile/carp/proc/thrash()
 	if(has_buckled_mobs())
 		stamina -= 10 //when someone lays on him and he thrashes, he loses energy
@@ -64,9 +62,6 @@
 	if(!has_buckled_mobs())
 		stamina += 10 //they thrash around to regain stamina when no one is ontop of them
 		visible_message("<span class='warning'>[src] thrashes around, regaining some energy!</span>")
-
-
-
 
 
 /mob/living/simple_animal/hostile/carp/attack_hand(var/mob/living/carbon/human/A) //Wrassle that carp
@@ -106,7 +101,7 @@
 	if(stamina <= 50)
 		flop() //carp is tired and flops with exhaustion
 	else
-		return
+		return..()
 
 
 /mob/living/simple_animal/hostile/carp/holocarp

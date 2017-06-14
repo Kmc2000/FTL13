@@ -27,7 +27,7 @@
 //
 	if(!istype(I, /obj/item/weapon/fishing/pulser))
 		user.visible_message("<span class='warning'>[user] dips something into the [src]</span>")
-		return ..()
+	return ..()
 
 //I will handle all the fishy calculations in this attackby, so it draws carp up and rolls the dice etc. etc.
 
@@ -35,27 +35,14 @@
 //This will be phased out once i get the code actually working, this is just for prototyping
 
 
-
-
-
-
-
-
 ///Items/////////////////////////////////////////////
 //												   //
 /////////////////////////////////////////////////////
 
 
-
 //EXPERIMENTAL//
 
-
-
-
 /////////Bait//////////////////
-
-
-
 
 /obj/item/weapon/fishing/pole
 	name = "Fishing Pole"
@@ -225,38 +212,12 @@
 	switch(mode)
 		if("Modify Settings")
 			switch(depthlevel) 		//long drawn way of doing it but i'm bad at this soooo.
-				if("1")
-					depth = 1
-					icon_state = "pulser_1"
-				if("2")
-					depth = 2
-					icon_state = "pulser_2"
-				if("3")
-					depth = 3
-					icon_state = "pulser_3"
-				if("4")
-					depth = 4
-					icon_state = "pulser_4"
-				if("5")
-					depth = 5
-					icon_state = "pulser_5"
+				depth = text2num(depthlevel)
+				icon_state = "pulser_[depthlevel]"
 
 			switch(pulselevel) 		//long drawn way of doing it but i'm bad at this soooo.
-				if("1")
-					depth = 1
-					icon_state = "pulser_1"
-				if("2")
-					depth = 2
-					icon_state = "pulser_2"
-				if("3")
-					depth = 3
-					icon_state = "pulser_3"
-				if("4")
-					depth = 4
-					icon_state = "pulser_4"
-				if("5")
-					depth = 5
-					icon_state = "pulser_5"
+				depth = text2num(depthlevel)
+				icon_state = "pulser_[depthlevel]"
 
 
 
